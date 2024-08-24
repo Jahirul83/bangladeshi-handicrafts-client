@@ -1,42 +1,162 @@
 [
     {
         "id": 1,
-        "image": "https://i.ibb.co/QFBZVRm/img2.jpg",
-        "name": "Crafts of Bengal",
+        "image": "https://i.imgur.com/p9DhRWo.png",
+        "businessName": "Bengal Craftship",
         "years": 5,
         "products": 120,
         "likes": "4.5K"
     },
     {
         "id": 2,
-        "image": "https://i.ibb.co/QFBZVRm/img2.jpg",
-        "name": "Handmade Heritage",
-        "years": 8,
-        "products": 200,
-        "likes": "6.2K"
+        "image": "https://i.imgur.com/oVd4ESV.png",
+        "businessName": "Heritage Handicrafts",
+        "years": 10,
+        "products": 250,
+        "likes": "7.8K"
     },
     {
         "id": 3,
-        "image": "https://i.ibb.co/QFBZVRm/img2.jpg",
-        "name": "Bangla Craft Works",
-        "years": 3,
-        "products": 75,
+        "image": "https://i.imgur.com/i514APv.png",
+        "businessName": "Artisan Woodworks",
+        "years": 7,
+        "products": 90,
         "likes": "3.2K"
     },
     {
         "id": 4,
-        "image": "https://i.ibb.co/QFBZVRm/img2.jpg",
-        "name": "Dhaka Artisans",
-        "years": 10,
-        "products": 150,
-        "likes": "8.1K"
+        "image": "https://i.imgur.com/7dJDZHP.png",
+        "businessName": "Silk & Weave",
+        "years": 12,
+        "products": 320,
+        "likes": "10K"
     },
     {
         "id": 5,
-        "image": "https://i.ibb.co/QFBZVRm/img2.jpg",
-        "name": "Golden Threads",
+        "image": "https://i.imgur.com/YOxAqGb.png",
+        "businessName": "Terracotta Tales",
         "years": 6,
+        "products": 150,
+        "likes": "5.1K"
+    },
+    {
+        "id": 6,
+        "image": "https://i.imgur.com/Lm8qKKJ.png",
+        "businessName": "Eco-Friendly Creations",
+        "years": 4,
+        "products": 80,
+        "likes": "2.9K"
+    },
+    {
+        "id": 7,
+        "image": "https://i.imgur.com/gUZsm0Y.png",
+        "businessName": "Batik Artistry",
+        "years": 8,
+        "products": 200,
+        "likes": "6.7K"
+    },
+    {
+        "id": 8,
+        "image": "https://i.imgur.com/XQanGdp.png",
+        "businessName": "Vintage Vibes",
+        "years": 15,
+        "products": 350,
+        "likes": "12K"
+    },
+    {
+        "id": 9,
+        "image": "https://i.imgur.com/5lLDocl.png",
+        "businessName": "Handloom Heritage",
+        "years": 9,
         "products": 180,
-        "likes": "5.7K"
+        "likes": "6.1K"
+    },
+    {
+        "id": 10,
+        "image": "https://i.imgur.com/QGq6hmT.png",
+        "businessName": "Ceramic Studio",
+        "years": 3,
+        "products": 60,
+        "likes": "1.8K"
+    },
+    {
+        "id": 11,
+        "image": "https://i.imgur.com/mD5Fu33.png",
+        "businessName": "Leather & Lace",
+        "years": 11,
+        "products": 220,
+        "likes": "7.4K"
+    },
+    {
+        "id": 12,
+        "image": "https://i.imgur.com/EDhmT59.png",
+        "businessName": "Beaded Beauty",
+        "years": 6,
+        "products": 140,
+        "likes": "5K"
+    },
+    {
+        "id": 13,
+        "image": "https://i.imgur.com/CLbP7z8.png",
+        "businessName": "Knit & Purl",
+        "years": 5,
+        "products": 110,
+        "likes": "4.2K"
+    },
+    {
+        "id": 14,
+        "image": "https://i.imgur.com/x2zNAyb.png",
+        "businessName": "Bamboo Creations",
+        "years": 8,
+        "products": 170,
+        "likes": "6.5K"
+    },
+    {
+        "id": 15,
+        "image": "https://i.imgur.com/Nt4IfL9.png",
+        "businessName": "Jewels of the Earth",
+        "years": 10,
+        "products": 240,
+        "likes": "8.2K"
+    },
+    {
+        "id": 16,
+        "image": "https://i.imgur.com/zebuvZF.png",
+        "businessName": "Thread & Needle",
+        "years": 7,
+        "products": 130,
+        "likes": "4.8K"
+    },
+    {
+        "id": 17,
+        "image": "https://i.imgur.com/Z3ZEsM8.png",
+        "businessName": "Pottery Passion",
+        "years": 9,
+        "products": 160,
+        "likes": "5.9K"
+    },
+    {
+        "id": 18,
+        "image": "https://i.imgur.com/9sBvbFd.png",
+        "businessName": "Woven Wonders",
+        "years": 12,
+        "products": 300,
+        "likes": "9.5K"
+    },
+    {
+        "id": 19,
+        "image": "https://i.imgur.com/OrhlIkB.png",
+        "businessName": "Rustic Roots",
+        "years": 4,
+        "products": 90,
+        "likes": "3K"
+    },
+    {
+        "id": 20,
+        "image": "https://i.imgur.com/52agXqc.png",
+        "businessName": "Stone Carvings Co.",
+        "years": 14,
+        "products": 280,
+        "likes": "10.7K"
     }
 ]
