@@ -1,0 +1,82 @@
+[
+    {
+      "id": 1,
+      "productName": "Handwoven Dhakai Jamdani",
+      "materialsUsed": ["Cotton", "Silk"],
+      "craftingMethod": "Handloom weaving",
+      "rating": 4.8,
+      "isFavorite": false
+    },
+    {
+      "id": 2,
+      "productName": "Terracotta Wall Art",
+      "materialsUsed": ["Terracotta", "Natural Pigments"],
+      "craftingMethod": "Molding and Painting",
+      "rating": 4.7,
+      "isFavorite": true
+    },
+    {
+      "id": 3,
+      "productName": "Nakshi Kantha Quilt",
+      "materialsUsed": ["Cotton", "Thread"],
+      "craftingMethod": "Hand Embroidery",
+      "rating": 4.9,
+      "isFavorite": false
+    },
+    {
+      "id": 4,
+      "productName": "Jute Tote Bag",
+      "materialsUsed": ["Jute", "Leather"],
+      "craftingMethod": "Hand Stitching",
+      "rating": 4.5,
+      "isFavorite": true
+    },
+    {
+      "id": 5,
+      "productName": "Hand-carved Wooden Box",
+      "materialsUsed": ["Mahogany", "Varnish"],
+      "craftingMethod": "Wood Carving",
+      "rating": 4.6,
+      "isFavorite": false
+    },
+    {
+      "id": 6,
+      "productName": "Bamboo Wind Chimes",
+      "materialsUsed": ["Bamboo", "String"],
+      "craftingMethod": "Hand Assembling",
+      "rating": 4.4,
+      "isFavorite": true
+    },
+    {
+      "id": 7,
+      "productName": "Ceramic Flower Vase",
+      "materialsUsed": ["Clay", "Glaze"],
+      "craftingMethod": "Pottery Wheel",
+      "rating": 4.7,
+      "isFavorite": false
+    },
+    {
+      "id": 8,
+      "productName": "Rattan Chair",
+      "materialsUsed": ["Rattan", "Bamboo"],
+      "craftingMethod": "Hand Weaving",
+      "rating": 4.6,
+      "isFavorite": true
+    },
+    {
+      "id": 9,
+      "productName": "Embroidered Cushion Cover",
+      "materialsUsed": ["Silk", "Thread"],
+      "craftingMethod": "Machine Embroidery",
+      "rating": 4.8,
+      "isFavorite": false
+    },
+    {
+      "id": 10,
+      "productName": "Leather Wallet",
+      "materialsUsed": ["Leather", "Metal Zipper"],
+      "craftingMethod": "Hand Cutting and Stitching",
+      "rating": 4.5,
+      "isFavorite": true
+    }
+  ]
