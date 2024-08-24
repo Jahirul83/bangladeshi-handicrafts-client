@@ -1,82 +1,202 @@
 [
-    {
-      "id": 1,
-      "productName": "Handwoven Dhakai Jamdani",
-      "materialsUsed": ["Cotton", "Silk"],
-      "craftingMethod": "Handloom weaving",
-      "rating": 4.8,
-      "isFavorite": false
-    },
-    {
-      "id": 2,
-      "productName": "Terracotta Wall Art",
-      "materialsUsed": ["Terracotta", "Natural Pigments"],
-      "craftingMethod": "Molding and Painting",
-      "rating": 4.7,
-      "isFavorite": true
-    },
-    {
-      "id": 3,
-      "productName": "Nakshi Kantha Quilt",
-      "materialsUsed": ["Cotton", "Thread"],
-      "craftingMethod": "Hand Embroidery",
-      "rating": 4.9,
-      "isFavorite": false
-    },
-    {
-      "id": 4,
-      "productName": "Jute Tote Bag",
-      "materialsUsed": ["Jute", "Leather"],
-      "craftingMethod": "Hand Stitching",
-      "rating": 4.5,
-      "isFavorite": true
-    },
-    {
-      "id": 5,
-      "productName": "Hand-carved Wooden Box",
-      "materialsUsed": ["Mahogany", "Varnish"],
-      "craftingMethod": "Wood Carving",
-      "rating": 4.6,
-      "isFavorite": false
-    },
-    {
-      "id": 6,
-      "productName": "Bamboo Wind Chimes",
-      "materialsUsed": ["Bamboo", "String"],
-      "craftingMethod": "Hand Assembling",
-      "rating": 4.4,
-      "isFavorite": true
-    },
-    {
-      "id": 7,
-      "productName": "Ceramic Flower Vase",
-      "materialsUsed": ["Clay", "Glaze"],
-      "craftingMethod": "Pottery Wheel",
-      "rating": 4.7,
-      "isFavorite": false
-    },
-    {
-      "id": 8,
-      "productName": "Rattan Chair",
-      "materialsUsed": ["Rattan", "Bamboo"],
-      "craftingMethod": "Hand Weaving",
-      "rating": 4.6,
-      "isFavorite": true
-    },
-    {
-      "id": 9,
-      "productName": "Embroidered Cushion Cover",
-      "materialsUsed": ["Silk", "Thread"],
-      "craftingMethod": "Machine Embroidery",
-      "rating": 4.8,
-      "isFavorite": false
-    },
-    {
-      "id": 10,
-      "productName": "Leather Wallet",
-      "materialsUsed": ["Leather", "Metal Zipper"],
-      "craftingMethod": "Hand Cutting and Stitching",
-      "rating": 4.5,
-      "isFavorite": true
-    }
-  ]
+  {
+    "id": 1,
+    "productName": "Cotton hand bag",
+    "productImage": "https://i.imgur.com/k28Z88S.png",
+    "materialsUsed": ["Cotton", "Silk"],
+    "craftingMethod": "Handloom weaving",
+    "rating": 4.8,
+    "isFavorite": false,
+    "businessName": "Dhaka creation"
+  },
+  {
+    "id": 2,
+    "productName": "elephant handmade umbrella",
+    "productImage": "https://i.imgur.com/Q08QPkw.png",
+    "materialsUsed": ["Cotton"],
+    "craftingMethod": "Cotton dyeing",
+    "rating": 4.6,
+    "isFavorite": true,
+    "businessName": "Batik Creations"
+  },
+  {
+    "id": 3,
+    "productName": "Peacock Showpiece",
+    "productImage": "https://i.imgur.com/h7g1my0.png",
+    "materialsUsed": ["Clay", "Paint"],
+    "craftingMethod": "Hand sculpting",
+    "rating": 4.7,
+    "isFavorite": false,
+    "businessName": "Earthy Elegance"
+  },
+  {
+    "id": 4,
+    "productName": "Kalamkari Wall Hanging",
+    "productImage": "https://i.imgur.com/59hEY11.png",
+    "materialsUsed": ["Metal", "Natural Dyes"],
+    "craftingMethod": "Hand painting",
+    "rating": 4.9,
+    "isFavorite": true,
+    "businessName": "Artisan’s Touch"
+  },
+  {
+    "id": 5,
+    "productName": "Gorgeously crafted black clutch",
+    "productImage": "https://i.imgur.com/EcPH0tF.png",
+    "materialsUsed": ["golden, sequin detailing"],
+    "craftingMethod": "Hand weaving",
+    "rating": 4.8,
+    "isFavorite": false,
+    "businessName": "Kashmir Threads"
+  },
+  {
+    "id": 6,
+    "productName": "Amazing T-lite holder",
+    "productImage": "https://i.imgur.com/UQgctxb.png",
+    "materialsUsed": ["made up of metal"],
+    "craftingMethod": "Hand",
+    "rating": 4.5,
+    "isFavorite": true,
+    "businessName": "Stitch & Style"
+  },
+  {
+    "id": 7,
+    "productName": "Apple shaped wooden box",
+    "productImage": "https://i.imgur.com/wVT8Nur.png",
+    "materialsUsed": ["Wood"],
+    "craftingMethod": "wooden with meeankari work",
+    "rating": 4.7,
+    "isFavorite": false,
+    "businessName": "Bamboo Creations"
+  },
+  {
+    "id": 8,
+    "productName": "Tissue Box",
+    "productImage": "https://i.imgur.com/pfI5TVL.png",
+    "materialsUsed": ["silver"],
+    "craftingMethod": "Hand",
+    "rating": 4.6,
+    "isFavorite": true,
+    "businessName": "Print Artisans"
+  },
+  {
+    "id": 9,
+    "productName": "Pair of steel glass",
+    "productImage": "https://i.imgur.com/TXbC0y9.png",
+    "materialsUsed": ["stunning sheet"],
+    "craftingMethod": "Macramé",
+    "rating": 4.8,
+    "isFavorite": false,
+    "businessName": "Knot & Thread"
+  },
+  {
+    "id": 10,
+    "productName": "Trendy Colourful Boho Gypsy Ladies Bag",
+    "productImage": "https://i.imgur.com/qamj6bX.png",
+    "materialsUsed": ["Cotton"],
+    "craftingMethod": "Cotton carving",
+    "rating": 4.9,
+    "isFavorite": true,
+    "businessName": "Clay Creations"
+  },
+  {
+    "id": 11,
+    "productName": "Embroidererd Purse Bag",
+    "productImage": "https://i.imgur.com/aJA1Q3d.png",
+    "materialsUsed": ["Cotton"],
+    "craftingMethod": "Cotton carving",
+    "rating": 4.7,
+    "isFavorite": false,
+    "businessName": "Woodworks"
+  },
+  {
+    "id": 12,
+    "productName": "three camel showpiece",
+    "productImage": "https://i.imgur.com/gEdZZq9.png",
+    "materialsUsed": ["Glass Beads"],
+    "craftingMethod": "Beadwork",
+    "rating": 4.6,
+    "isFavorite": true,
+    "businessName": "Bead Boutique"
+  },
+  {
+    "id": 13,
+    "productName": "Dry Fruit Gift Box",
+    "productImage": "https://i.imgur.com/PMJWASY.png",
+    "materialsUsed": ["Wooden"],
+    "craftingMethod": "wood",
+    "rating": 4.8,
+    "isFavorite": false,
+    "businessName": "Silk Artisans"
+  },
+  {
+    "id": 14,
+    "productName": "Beautiful Kundan Beads",
+    "productImage": "https://i.imgur.com/P47lWo1.png",
+    "materialsUsed": ["Crafted Meenakari Matki"],
+    "craftingMethod": "Hand",
+    "rating": 4.7,
+    "isFavorite": true,
+    "businessName": "Eco Crafts"
+  },
+  {
+    "id": 15,
+    "productName": "Wall Hanging Parrot",
+    "productImage": "https://i.imgur.com/uamVkES.png",
+    "materialsUsed": ["soil"],
+    "craftingMethod": "Hand",
+    "rating": 4.9,
+    "isFavorite": false,
+    "businessName": "Wool & Yarn"
+  },
+  {
+    "id": 16,
+    "productName": "wooden flower pots",
+    "productImage": "https://i.imgur.com/ydAQcph.png",
+    "materialsUsed": ["Wood"],
+    "craftingMethod": "Ikat weaving",
+    "rating": 4.6,
+    "isFavorite": true,
+    "businessName": "Ikat Weavers"
+  },
+  {
+    "id": 17,
+    "productName": "Stone Tree",
+    "productImage": "https://i.imgur.com/b3u57n0.png",
+    "materialsUsed": ["Wood"],
+    "craftingMethod": "Wood quilling",
+    "rating": 4.5,
+    "isFavorite": false,
+    "businessName": "Crafty Cards"
+  },
+  {
+    "id": 18,
+    "productName": "Artistic Ragini",
+    "productImage": "https://i.imgur.com/xPetGD8.png",
+    "materialsUsed": ["Wood", "Paint"],
+    "craftingMethod": "Hand painting",
+    "rating": 4.8,
+    "isFavorite": true,
+    "businessName": "Wooden Wonders"
+  },
+  {
+    "id": 19,
+    "productName": "Rajasthani Jewellery Box",
+    "productImage": "https://i.imgur.com/KEhv3il.png",
+    "materialsUsed": ["Wood", "Stone"],
+    "craftingMethod": "Wood crafting",
+    "rating": 4.9,
+    "isFavorite": false,
+    "businessName": "Leather Works"
+  },
+  {
+    "id": 20,
+    "productName": "Golden Iron Handicraft Pot",
+    "productImage": "https://i.imgur.com/dodVHPG.png",
+    "materialsUsed": ["Iron"],
+    "craftingMethod": "Iron,Stone carving",
+    "rating": 4.7,
+    "isFavorite": true,
+    "businessName": "Art of Stone"
+  }
+]
