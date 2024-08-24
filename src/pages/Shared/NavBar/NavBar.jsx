@@ -35,7 +35,7 @@ const NavBar = () => {
                             {navOptions}
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-xl">Bd Handicraft</a>
+                    <a className="btn btn-ghost text-xl bg-green-600"><span className='uppercase text-red-700 font-extrabold'>Bd</span> Handicraft</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
