@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "image": "https://i.ibb.co/QFBZVRm/img2.jpg",
+        "name": "Crafts of Bengal",
+        "years": 5,
+        "products": 120,
+        "likes": "4.5K"
+    },
+    {
+        "id": 2,
+        "image": "https://i.ibb.co/QFBZVRm/img2.jpg",
+        "name": "Handmade Heritage",
+        "years": 8,
+        "products": 200,
+        "likes": "6.2K"
+    },
+    {
+        "id": 3,
+        "image": "https://i.ibb.co/QFBZVRm/img2.jpg",
+        "name": "Bangla Craft Works",
+        "years": 3,
+        "products": 75,
+        "likes": "3.2K"
+    },
+    {
+        "id": 4,
+        "image": "https://i.ibb.co/QFBZVRm/img2.jpg",
+        "name": "Dhaka Artisans",
+        "years": 10,
+        "products": 150,
+        "likes": "8.1K"
+    },
+    {
+        "id": 5,
+        "image": "https://i.ibb.co/QFBZVRm/img2.jpg",
+        "name": "Golden Threads",
+        "years": 6,
+        "products": 180,
+        "likes": "5.7K"
+    }
+]

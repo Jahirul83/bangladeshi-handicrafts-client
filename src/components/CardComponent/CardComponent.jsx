@@ -1,24 +1,25 @@
 import React from 'react';
 
-const CardComponent = () => {
+const CardComponent = ({ item }) => {
+    const { id, image, name, years, products, likes } = item;
     return (
-        <div>
-            <div className="card bg-base-100 w-96 shadow-xl">
-                <figure>
-                    <img
-                        src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                        alt="Shoes" />
-                </figure>
-                <div className="card-body">
-                    <h2 className="card-title">
-                        Shoes!
-                        <div className="badge badge-secondary">NEW</div>
-                    </h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
-                    <div className="card-actions justify-end">
-                        <div className="badge badge-outline">Fashion</div>
-                        <div className="badge badge-outline">Products</div>
-                    </div>
+        <div className="card bg-base-100 h-fit shadow-xl">
+            <figure>
+                <img
+                    src={image}
+                    alt="logo"
+                    className="w-full h-44 object-cover"
+                />
+            </figure>
+            <div className="card-body">
+                <h2 className="card-title uppercase">{name}</h2>
+                <div>
+                    <p>Years of Operation: {years}</p>
+                    <p>Number of Products: {products}</p>
+                    <p>Likes: {likes}</p>
+                </div>
+                <div className="card-actions justify-end">
+                    <button className="btn btn-primary">View Products</button>
                 </div>
             </div>
         </div>
