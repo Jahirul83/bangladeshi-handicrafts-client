@@ -1,9 +1,9 @@
 import React from 'react';
 
 const CardComponent = ({ item }) => {
-    const { id, image, name, years, products, likes } = item;
+    const { id, image,businessName, years, products, likes } = item;
     return (
-        <div className="card bg-base-100 h-fit shadow-xl">
+        <div className="card bg-base-100 h-96 shadow-xl">
             <figure>
                 <img
                     src={image}
@@ -12,7 +12,7 @@ const CardComponent = ({ item }) => {
                 />
             </figure>
             <div className="card-body">
-                <h2 className="card-title uppercase">{name}</h2>
+                <h2 className="card-title uppercase">{businessName}</h2>
                 <div>
                     <p>Years of Operation: {years}</p>
                     <p>Number of Products: {products}</p>
