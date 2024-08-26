@@ -4,6 +4,7 @@ import LoginImg from '../../assets/undraw_Login_re_4vu2.png'
 import { AuthContext } from '../../providers/AuthProvider';
 import { useContext, useState } from 'react';
 import Swal from 'sweetalert2';
+import SocialLogin from '../../components/SocialLogin/SocialLogin';
 
 const Login = () => {
     const { signIn, googleSignIn } = useContext(AuthContext);
@@ -85,7 +86,7 @@ const Login = () => {
                         </form>
                         <div>
                             <p className="text-center">or <br />
-                                <button className="btn btn-block"><FcGoogle></FcGoogle>Google</button>
+                                <SocialLogin></SocialLogin>
                             </p>
                             <p>if You do not have an account <Link className="btn btn-link" to='/signup'>Register</Link></p>
                             {
