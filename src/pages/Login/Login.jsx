@@ -1,11 +1,14 @@
 import { FcGoogle } from 'react-icons/fc';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import LoginImg from '../../assets/undraw_Login_re_4vu2.png'
 import { AuthContext } from '../../providers/AuthProvider';
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 
 const Login = () => {
-    const { signIn } = useContext(AuthContext);
+    const { signIn, googleSignIn } = useContext(AuthContext);
+    const [error, setError] = useState(''); 
+    const navigate = useNavigate();
+    const location = useLocation();
 
 
     const handleLogin = event => {
@@ -19,16 +22,6 @@ const Login = () => {
                 const user = result.user;
                 console.log(user);
             })
-    }
-    const handleGoogleLogin = () => {
-        SignInWithGoogle()
-            .then((result) => {
-                console.log(result?.user);
-                swal("Good job!", "You clicked the button!", "success");
-                navigate(location?.state ? location.state : '/');
-            }).catch((err) => {
-                console.error(err);
-            });
     }
     return (
         <div>
@@ -62,12 +55,12 @@ const Login = () => {
                         </form>
                         <div>
                             <p className="text-center">or <br />
-                                <button onClick={handleGoogleLogin} className="btn btn-block"><FcGoogle></FcGoogle>Google</button>
+                                <button className="btn btn-block"><FcGoogle></FcGoogle>Google</button>
                             </p>
                             <p>if You do not have an account <Link className="btn btn-link" to='/signup'>Register</Link></p>
-                            {/* {
+                            {
                                 error && <p className="text-red-600">{error.message}</p>
-                            } */}
+                            }
                         </div>
                     </div>
                 </div>

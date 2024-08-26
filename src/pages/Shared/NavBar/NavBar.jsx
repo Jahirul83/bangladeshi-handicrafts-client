@@ -1,7 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../../providers/AuthProvider';
+import userDefaultPic from "../../../assets/user.png"
 
 const NavBar = () => {
+
+    const { user, logOut } = useContext(AuthContext);
+    const handleLogOut = () => {
+        logOut()
+            .then(() => { })
+            .catch(error => console.log(error));
+    }
 
     const navOptions = <>
         <li><Link to="/">Home</Link></li>
@@ -45,7 +54,24 @@ const NavBar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                <Link to='/login'><button className="btn text-white bg-green-500 font-bold uppercase">Login</button></Link>
+                {
+                        user ?
+                            <div className="dropdown dropdown-end mr-3">
+                                <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+                                    <div className="w-10 rounded-full">
+                                        <img src={user?.photoURL ? user.photoURL : userDefaultPic} />
+                                    </div>
+                                </label>
+                                <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+
+                                    <Link className="ml-3 mb-2" to="/profile"><li>Profile</li></Link>
+                                    <Link className="ml-3" to="/register"><li>Register</li></Link>
+                                    <li><a onClick={handleLogOut}>Logout</a></li>
+                                </ul>
+                            </div>
+                            :
+                            <Link to='/login'><button className="btn text-white bg-green-500">Login</button></Link>
+                    }
                 </div>
             </div>
         </div>
