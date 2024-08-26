@@ -3,25 +3,55 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import LoginImg from '../../assets/undraw_Login_re_4vu2.png'
 import { AuthContext } from '../../providers/AuthProvider';
 import { useContext, useState } from 'react';
+import Swal from 'sweetalert2';
 
 const Login = () => {
     const { signIn, googleSignIn } = useContext(AuthContext);
-    const [error, setError] = useState(''); 
+    const [error, setError] = useState('');
     const navigate = useNavigate();
     const location = useLocation();
 
+    const from = location.state?.from?.pathname || "/";
 
-    const handleLogin = event => {
+
+    const handleLogin = (event) => {
         event.preventDefault();
         const form = event.target;
         const email = form.email.value;
         const password = form.password.value;
-        console.log(email, password);
         signIn(email, password)
             .then((result) => {
                 const user = result.user;
                 console.log(user);
+                Swal.fire({
+                    title: "Login Successfully",
+                    showClass: {
+                        popup: `
+                        animate__animated
+                        animate__fadeInUp
+                        animate__faster
+                      `
+                    },
+                    hideClass: {
+                        popup: `
+                        animate__animated
+                        animate__fadeOutDown
+                        animate__faster
+                      `
+                    }
+                });
+                navigate(from, { replace: true });
             })
+            .catch((error) => {
+                const errorCode = error.code;
+                const errorMessage = error.message;
+                console.log(errorCode, errorMessage);
+                setError(error);
+            });
+
+        console.log(event);
+        console.log(email, password);
+
     }
     return (
         <div>
