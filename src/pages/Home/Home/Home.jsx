@@ -3,6 +3,7 @@ import Banner from "../Banner/Banner";
 import BusinessSection from "../BusinessSection/BusinessSection";
 import { AuthContext } from "../../../providers/AuthProvider";
 import About from "../About/About";
+import Contact from "../Contact/Contact";
 
 
 const Home = () => {
@@ -17,6 +18,7 @@ const Home = () => {
             <Banner></Banner>
             <BusinessSection></BusinessSection>
             <About></About>
+            <Contact></Contact>
         </div>
     );
 };

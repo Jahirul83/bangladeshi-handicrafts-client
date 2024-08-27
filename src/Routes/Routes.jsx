@@ -12,6 +12,7 @@ import BusinessDetails from "../pages/Business/BusinessPage/BusinessDetails/Busi
 import Business from "../pages/Business/BusinessPage/Business/Business";
 import Profile from "../pages/Profile/Profile";
 import About from "../pages/Home/About/About";
+import Contact from "../pages/Home/Contact/Contact";
 
 export const router = createBrowserRouter([
     {
@@ -45,7 +46,7 @@ export const router = createBrowserRouter([
             },
             {
                 path: "contact",
-                element: <h2>contact</h2>
+                element: <Contact></Contact>
             },
             {
                 path: "profile",
