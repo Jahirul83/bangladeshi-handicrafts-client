@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    
     "productName": "Cotton hand bag",
     "productImage": "https://i.imgur.com/k28Z88S.png",
     "materialsUsed": ["Cotton", "Silk"],
@@ -10,7 +10,7 @@
     "businessName": "Dhaka creation"
   },
   {
-    "id": 2,
+    
     "productName": "elephant handmade umbrella",
     "productImage": "https://i.imgur.com/Q08QPkw.png",
     "materialsUsed": ["Cotton"],
@@ -20,7 +20,7 @@
     "businessName": "Batik Creations"
   },
   {
-    "id": 3,
+    
     "productName": "Peacock Showpiece",
     "productImage": "https://i.imgur.com/h7g1my0.png",
     "materialsUsed": ["Clay", "Paint"],
@@ -30,7 +30,7 @@
     "businessName": "Earthy Elegance"
   },
   {
-    "id": 4,
+    
     "productName": "Kalamkari Wall Hanging",
     "productImage": "https://i.imgur.com/59hEY11.png",
     "materialsUsed": ["Metal", "Natural Dyes"],
@@ -40,7 +40,7 @@
     "businessName": "Artisan’s Touch"
   },
   {
-    "id": 5,
+    
     "productName": "Gorgeously crafted black clutch",
     "productImage": "https://i.imgur.com/EcPH0tF.png",
     "materialsUsed": ["golden, sequin detailing"],
