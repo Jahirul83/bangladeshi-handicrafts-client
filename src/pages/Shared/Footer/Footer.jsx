@@ -1,9 +1,17 @@
+import { useContext } from "react";
+import { AuthContext } from "../../../providers/AuthProvider";
 
 
 const Footer = () => {
+  const { dark, setDark } = useContext(AuthContext);
+
+  const containerStyle = {
+      backgroundColor: dark ? '#333333' : '#ffffff',
+      color: dark ? '#ffffff' : '#333333',
+  };
     // branch created
     return (
-        <footer class="footer bg-base-300 text-base-content p-10">
+        <footer style={containerStyle} class="footer bg-base-300 text-base-content p-10">
         <nav>
           <h6 class="footer-title">Services</h6>
           <a class="link link-hover">Branding</a>

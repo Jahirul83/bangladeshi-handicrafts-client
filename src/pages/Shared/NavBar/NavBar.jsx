@@ -4,6 +4,17 @@ import { AuthContext } from '../../../providers/AuthProvider';
 import userDefaultPic from "../../../assets/user.png"
 
 const NavBar = () => {
+    const { dark, setDark } = useContext(AuthContext);
+
+    const handleDark = () => {
+        setDark(!dark);
+        console.log(dark);
+    }
+
+    const containerStyle = {
+        backgroundColor: dark ? '#333333' : '#ffffff',
+        color: dark ? '#ffffff' : '#333333',
+    };
 
     const { user, logOut } = useContext(AuthContext);
     const handleLogOut = () => {
@@ -22,7 +33,7 @@ const NavBar = () => {
 
     return (
         <div>
-            <div className="navbar bg-base-100">
+            <div style={containerStyle} className="navbar bg-base-100">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -43,10 +54,12 @@ const NavBar = () => {
                             tabIndex={0}
                             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
                             {navOptions}
+                            
                         </ul>
                     </div>
                     <a className="btn btn-ghost text-xl bg-green-600">
                         <span className='uppercase text-red-700 font-extrabold'>Bd</span> Handicraft</a>
+                        <input onClick={handleDark} type="checkbox" className="toggle ml-2" />
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
@@ -56,13 +69,13 @@ const NavBar = () => {
                 <div className="navbar-end">
                 {
                         user ?
-                            <div className="dropdown dropdown-end mr-3">
+                            <div className="dropdown dropdown-end mr-3 ">
                                 <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                                     <div className="w-10 rounded-full">
                                         <img src={user?.photoURL ? user.photoURL : userDefaultPic} />
                                     </div>
                                 </label>
-                                <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                                <ul style={containerStyle} tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
 
                                     <Link className="ml-3 mb-2" to="/profile"><li>Profile</li></Link>
                                     <Link className="ml-3" to="/signup"><li>Register</li></Link>
