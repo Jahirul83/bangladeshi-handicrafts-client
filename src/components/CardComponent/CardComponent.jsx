@@ -1,7 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const CardComponent = ({ item }) => {
-    const { id, image,businessName, years, products, likes } = item;
+    const { _id, image,businessName, years, products, likes } = item;
     return (
         <div className="card bg-base-100 h-96 shadow-xl">
             <figure>
@@ -19,7 +20,7 @@ const CardComponent = ({ item }) => {
                     <p>Likes: {likes}</p>
                 </div>
                 <div className="card-actions justify-end">
-                    <button className="btn btn-primary">View Products</button>
+                    <Link to={`/businesses/${_id}`}><button className="btn btn-primary">View Products</button></Link>
                 </div>
             </div>
         </div>
