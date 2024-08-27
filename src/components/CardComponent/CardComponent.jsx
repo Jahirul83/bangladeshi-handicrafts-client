@@ -1,10 +1,18 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../providers/AuthProvider';
 
 const CardComponent = ({ item }) => {
+    const { dark, setDark } = useContext(AuthContext);
+
+    const containerStyle = {
+        backgroundColor: dark ? '#333333' : '#ffffff',
+        color: dark ? '#ffffff' : '#444444',
+    };
+    
     const { _id, image,businessName, years, products, likes } = item;
     return (
-        <div className="card bg-base-100 h-96 shadow-xl">
+        <div style={containerStyle} className="card bg-base-100 h-96 shadow-xl">
             <figure>
                 <img
                     src={image}

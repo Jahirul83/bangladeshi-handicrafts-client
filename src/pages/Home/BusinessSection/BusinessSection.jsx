@@ -1,12 +1,20 @@
+import { useContext } from "react";
 import CardComponent from "../../../components/CardComponent/CardComponent";
 import SectionTitle from "../../../components/SectionTitle/SectionTitle";
 import useBusinessData from "../../../hooks/useBusinessData";
+import { AuthContext } from "../../../providers/AuthProvider";
 
 const BusinessSection = () => {
     const [business] = useBusinessData();
+    const { dark, setDark } = useContext(AuthContext);
+
+    const containerStyle = {
+        backgroundColor: dark ? '#333333' : '#ffffff',
+        color: dark ? '#ffffff' : '#333333',
+    };
 
     return (
-        <div className="p-5">
+        <div style={containerStyle} className="p-5">
             <SectionTitle
             heading={"Featured Handicraft Businesses"}
             subHeading={"Explore the unique craftsmanship of our local artisans"}

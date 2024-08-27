@@ -1,11 +1,25 @@
 import { Rating } from '@smastrom/react-rating';
 import '@smastrom/react-rating/style.css';
+import { useContext } from 'react';
+import { AuthContext } from '../../providers/AuthProvider';
 
 const ProductCard = ({ item }) => {
+    const { dark, setDark } = useContext(AuthContext);
+
+    const handleDark = () => {
+        setDark(!dark);
+        console.log(dark);
+    }
+
+    const containerStyle = {
+        backgroundColor: dark ? '#333333' : '#ffffff',
+        color: dark ? '#f5f5f5' : '#444444',
+    };
     const { _id, productName, productImage, materialsUsed, craftingMethod, rating, isFavorite, businessName } = item;
 
+
     return (
-        <div className="card bg-base-100 h-96 shadow-xl">
+        <div style={containerStyle} className="card bg-base-100 h-96 shadow-xl">
             <figure>
                 <img
                     src={productImage}

@@ -9,6 +9,10 @@ import Blog from "../pages/Blog/Blog";
 import PrivateRoutes from "./PrivateRoutes";
 import ErrorPage from "./ErrorPage";
 import BusinessDetails from "../pages/Business/BusinessPage/BusinessDetails/BusinessDetails";
+import Business from "../pages/Business/BusinessPage/Business/Business";
+import Profile from "../pages/Profile/Profile";
+import About from "../pages/Home/About/About";
+import Contact from "../pages/Home/Contact/Contact";
 
 export const router = createBrowserRouter([
     {
@@ -26,7 +30,7 @@ export const router = createBrowserRouter([
             },
             {
                 path: "business",
-                element: <h2>business</h2>
+                element: <Business></Business>
             },
             {
                 path: "login",
@@ -37,9 +41,21 @@ export const router = createBrowserRouter([
                 element: <SignUp></SignUp>
             },
             {
+                path: "about",
+                element: <About></About>
+            },
+            {
+                path: "contact",
+                element: <Contact></Contact>
+            },
+            {
+                path: "profile",
+                element: <PrivateRoutes><Profile></Profile></PrivateRoutes>,
+            },
+            {
                 path: "/businesses/:id",
                 element: <PrivateRoutes><BusinessDetails></BusinessDetails></PrivateRoutes>,
-                loader:({ params }) => fetch(`http://localhost:5000/businesses/${params.id}`)
+                loader: ({ params }) => fetch(`http://localhost:5000/businesses/${params.id}`)
             },
         ]
     },
