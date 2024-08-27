@@ -8,12 +8,13 @@ import SignUp from "../pages/SignUp/SignUp";
 import Blog from "../pages/Blog/Blog";
 import PrivateRoutes from "./PrivateRoutes";
 import ErrorPage from "./ErrorPage";
+import BusinessDetails from "../pages/Business/BusinessPage/BusinessDetails/BusinessDetails";
 
 export const router = createBrowserRouter([
     {
         path: "/",
         element: <Main></Main>,
-        errorElement: <ErrorPage></ErrorPage>,
+        // errorElement: <ErrorPage></ErrorPage>,
         children: [
             {
                 path: "/",
@@ -34,6 +35,10 @@ export const router = createBrowserRouter([
             {
                 path: "signup",
                 element: <SignUp></SignUp>
+            },
+            {
+                path: "/businesses/:id",
+                element: <BusinessDetails></BusinessDetails>
             },
         ]
     },
