@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import Swal from "sweetalert2";
+import signUpImg from '../../assets/undraw_Sign_up_n6im.png'
 
 
 const SignUp = () => {
@@ -22,11 +23,11 @@ const SignUp = () => {
         console.log(loggedUser);
         reset();
         Swal.fire({
-            position: "top-end",
-            icon: "success",
-            title: "user created successfully",
-            showConfirmButton: false,
-            timer: 1500
+          position: "top-end",
+          icon: "success",
+          title: "user created successfully",
+          showConfirmButton: false,
+          timer: 1500
         });
         navigate('/');
       })
@@ -40,10 +41,11 @@ const SignUp = () => {
       <div className="hero min-h-screen bg-base-200">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className="text-center lg:text-left">
-            <h1 className="text-5xl font-bold">Sign Up now!</h1>
-            <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+            <h1 className="text-5xl font-bold uppercase">Sign Up now!</h1>
+            <img className='w-full h-96 py-6 hidden sm:block' src={signUpImg} alt="" />
           </div>
-          <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+          <div className="card-body shrink-0 w-full max-w-sm shadow-2xl bg-green-300 rounded-lg">
+            <h2 className="text-4xl text-center font-bold uppercase">Sign Up</h2>
             <form onSubmit={handleSubmit(onSubmit)} className="card-body">
               <div className="form-control">
                 <label className="label">
@@ -98,8 +100,7 @@ const SignUp = () => {
                 {/* <button className="btn btn-primary">Sign Up</button> */}
               </div>
             </form>
-            <p className="px-6"><small>Already have an account <Link to="/login">Login</Link></small></p>
-            {/* <SocialLogin></SocialLogin> */}
+            <p className="px-6"><small>Already have an account <Link className="btn btn-link" to="/login">Login</Link></small></p>
           </div>
         </div>
       </div>
