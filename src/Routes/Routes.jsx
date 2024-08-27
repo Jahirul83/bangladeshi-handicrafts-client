@@ -38,7 +38,8 @@ export const router = createBrowserRouter([
             },
             {
                 path: "/businesses/:id",
-                element: <BusinessDetails></BusinessDetails>
+                element: <BusinessDetails></BusinessDetails>,
+                loader:({ params }) => fetch(`http://localhost:5000/businesses/${params.id}`)
             },
         ]
     },
