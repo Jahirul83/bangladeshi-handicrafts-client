@@ -18,7 +18,7 @@ export const router = createBrowserRouter([
     {
         path: "/",
         element: <Main></Main>,
-        // errorElement: <ErrorPage></ErrorPage>,
+        errorElement: <ErrorPage></ErrorPage>,
         children: [
             {
                 path: "/",
@@ -55,7 +55,7 @@ export const router = createBrowserRouter([
             {
                 path: "/businesses/:id",
                 element: <PrivateRoutes><BusinessDetails></BusinessDetails></PrivateRoutes>,
-                loader: ({ params }) => fetch(`http://localhost:5000/businesses/${params.id}`)
+                loader: ({ params }) => fetch(`https://bangladeshi-handicrafts-server.vercel.app/businesses/${params.id}`)
             },
         ]
     },
