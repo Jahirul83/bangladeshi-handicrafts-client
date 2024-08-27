@@ -1,34 +1,58 @@
 import { FcGoogle } from 'react-icons/fc';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import LoginImg from '../../assets/undraw_Login_re_4vu2.png'
 import { AuthContext } from '../../providers/AuthProvider';
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
+import Swal from 'sweetalert2';
+import SocialLogin from '../../components/SocialLogin/SocialLogin';
 
 const Login = () => {
-    const { signIn } = useContext(AuthContext);
+    const { signIn, googleSignIn } = useContext(AuthContext);
+    const [error, setError] = useState('');
+    const navigate = useNavigate();
+    const location = useLocation();
+
+    const from = location.state?.from?.pathname || "/";
 
 
-    const handleLogin = event => {
+    const handleLogin = (event) => {
         event.preventDefault();
         const form = event.target;
         const email = form.email.value;
         const password = form.password.value;
-        console.log(email, password);
         signIn(email, password)
             .then((result) => {
                 const user = result.user;
                 console.log(user);
+                Swal.fire({
+                    title: "Login Successfully",
+                    showClass: {
+                        popup: `
+                        animate__animated
+                        animate__fadeInUp
+                        animate__faster
+                      `
+                    },
+                    hideClass: {
+                        popup: `
+                        animate__animated
+                        animate__fadeOutDown
+                        animate__faster
+                      `
+                    }
+                });
+                navigate(from, { replace: true });
             })
-    }
-    const handleGoogleLogin = () => {
-        SignInWithGoogle()
-            .then((result) => {
-                console.log(result?.user);
-                swal("Good job!", "You clicked the button!", "success");
-                navigate(location?.state ? location.state : '/');
-            }).catch((err) => {
-                console.error(err);
+            .catch((error) => {
+                const errorCode = error.code;
+                const errorMessage = error.message;
+                console.log(errorCode, errorMessage);
+                setError(error);
             });
+
+        console.log(event);
+        console.log(email, password);
+
     }
     return (
         <div>
@@ -62,12 +86,12 @@ const Login = () => {
                         </form>
                         <div>
                             <p className="text-center">or <br />
-                                <button onClick={handleGoogleLogin} className="btn btn-block"><FcGoogle></FcGoogle>Google</button>
+                                <SocialLogin></SocialLogin>
                             </p>
                             <p>if You do not have an account <Link className="btn btn-link" to='/signup'>Register</Link></p>
-                            {/* {
+                            {
                                 error && <p className="text-red-600">{error.message}</p>
-                            } */}
+                            }
                         </div>
                     </div>
                 </div>

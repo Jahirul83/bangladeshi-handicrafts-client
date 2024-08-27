@@ -5,7 +5,7 @@ const useBusinessData = () => {
     const [business, setBusiness] = useState([]);
     const [loading,setLoading] = useState(true);
     useEffect(()=>{
-        fetch('business.json')
+        fetch('http://localhost:5000/businesses')
         .then(res => res.json())
         .then(data => {
             setBusiness(data);
