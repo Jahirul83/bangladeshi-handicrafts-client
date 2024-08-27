@@ -2,6 +2,7 @@ import { useContext } from "react";
 import Banner from "../Banner/Banner";
 import BusinessSection from "../BusinessSection/BusinessSection";
 import { AuthContext } from "../../../providers/AuthProvider";
+import About from "../About/About";
 
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
         <div style={containerStyle}>
             <Banner></Banner>
             <BusinessSection></BusinessSection>
+            <About></About>
         </div>
     );
 };

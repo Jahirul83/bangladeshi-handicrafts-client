@@ -11,6 +11,7 @@ import ErrorPage from "./ErrorPage";
 import BusinessDetails from "../pages/Business/BusinessPage/BusinessDetails/BusinessDetails";
 import Business from "../pages/Business/BusinessPage/Business/Business";
 import Profile from "../pages/Profile/Profile";
+import About from "../pages/Home/About/About";
 
 export const router = createBrowserRouter([
     {
@@ -37,6 +38,14 @@ export const router = createBrowserRouter([
             {
                 path: "signup",
                 element: <SignUp></SignUp>
+            },
+            {
+                path: "about",
+                element: <About></About>
+            },
+            {
+                path: "contact",
+                element: <h2>contact</h2>
             },
             {
                 path: "profile",
